@@ -8,7 +8,8 @@
 </div>
 </template>
 
-<script>
+<script setup>
+/* eslint-disable no-undef */
 defineProps({
   name: String,
   description: String,
@@ -33,6 +34,7 @@ defineProps({
 .product-image {
   width: 100%;
   height: 200px;
+  object-fit: cover;
   border-radius: 12px;
   margin-bottom: 16px;
 }
@@ -53,12 +55,12 @@ defineProps({
 .price {
   font-size: 22px;
   font-weight: 700;
-  color: #27ae60;
+  color: #8b0000; 
   margin: 0 0 16px 0;
 }
 
 .by-button {
-  background-color: #3498db;
+  background-color: #a91d22; 
   color: white;
   border: none;
   border-radius: 8px;
@@ -67,9 +69,10 @@ defineProps({
   font-weight: 600;
   cursor: pointer;
   width: 100%;
+  transition: background-color 0.2s ease;
 }
 
 .by-button:hover {
-  background-color: #2980b9;
+  background-color: #801217; 
 }
 </style>
