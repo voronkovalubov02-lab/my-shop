@@ -1,15 +1,27 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<Productcard
+name="Українська вишиванка"
+description="Стильна вишиванка з традиційним орнаментами"
+price="1500"
+image="https://encrypted-tbn0.gstatic.com/images?q=tbn:
+ANd9GcSCrKn_Ds5Odt9WJTjZWh47MBe6HY6WowLDwCIG140a3w&s=10"
+
+
+
+
+/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import productcard from './components/productcard.vue';
+
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    productcard
   }
 }
 </script>
